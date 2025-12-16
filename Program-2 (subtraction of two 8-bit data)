@@ -1,0 +1,9 @@
+LDA 8050      
+MOV B, A      
+LDA 8051      
+SUB B         
+STA 8052      
+JNC SKIP      
+MVI A, 01H   
+STA 8053     
+SKIP: HLT     
